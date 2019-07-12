@@ -8,8 +8,8 @@ import views
 # In this example, we've separated out the views.py into a new file
 urlpatterns = [
     
-    path('bio_middle', views.bio),
-    
+    path('bio', views.bio),
+    path('resume', views.bio),
 ]
 
 # Boilerplate to include static files.

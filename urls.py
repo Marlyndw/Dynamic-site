@@ -9,7 +9,9 @@ import views
 urlpatterns = [
     
     path('bio', views.bio),
-    
+    path('resume', views.resume),
+    path('contact', views.contact),
+    path('index', views.index),
 ]
 
 # Boilerplate to include static files.

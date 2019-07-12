@@ -25,5 +25,35 @@ def bio(request):
      }
     
     return render(request, 'bio.html', context)
+    
+
+def resume(request):
+    
+    context = {
+    
+    "resume_is_active": "active",
+     }
+    
+    return render(request, 'resume.html', context)
+    
+
+def contact(request):
+    
+    context = {
+    
+    "contact_is_active": "active",
+     }
+    
+    return render(request, 'contact.html', context)
+    
+    
+def index(request):
+    
+    context = {
+    
+    "index_is_active": "active",
+     }
+    
+    return render(request, 'index.html', context)
 
 

@@ -8,13 +8,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>{{title}}</title>
+  <title>resume</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../docs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../static/css/bio.css" rel="stylesheet">
+  <link href="../docs/css/bio.css" rel="stylesheet">
 
 </head>
 
@@ -23,21 +23,25 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger {{index_is_active}}" href="index">Welcome</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Welcome</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger {{bio_is_active}}" href="/bio">Bio</a>
-          </li>
+            <a class="nav-link js-scroll-trigger" href=""></a></li>
+          
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger {{resume_is_active}}" href="resume">Resume</a>
-          </li>
+            <a class="nav-link js-scroll-trigger" href=""></a></li>
+          
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger {{contact_is_active}}" href="contact">Contact</a>
-          </li>
+            <a class="nav-link js-scroll-trigger" href=""></a></li>
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a></li>
+            
         </ul>
       </div>
     </div>
@@ -46,7 +50,7 @@
   <header class="bg-primary text-white">
    <div class="header">
      <div class="container text-center">
-      <img src="../static/img/IMG_20190520_120944.jpg"/>
+      <img src="../docs/img/IMG_20190520_120944.jpg"/>
       <h1>Marlyn Williams</h1>
       <!-- <p class="lead"></p> -->
      </div>
@@ -57,8 +61,19 @@
 <!-- content --->
 
 
-{% block content %}
-{% endblock content %}
+<!-- Resume -->
+<section id="resume">
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-8 mx-auto">
+    <h2>Resume</h2>
+     <p class="lead"> Please see the link to my resume</p>
+      <a href="https://drive.google.com/open?id=1saukKhepHrt2jw5x2uqDzRh3LRmI_irV">Resume</a>
+       </div>
+      </div>
+     </div>
+    </section>
+
 
 
 
@@ -71,19 +86,18 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="../static/vendor/jquery/jquery.min.js"></script>
-  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../docs/vendor/jquery/jquery.min.js"></script>
+  <script src="../docs/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../docs/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="../static/js/scrolling-nav.js"></script>
+  <script src="../docs/js/scrolling-nav.js"></script>
 
 </body>
 
 </html>
-
 
 
 
