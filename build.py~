@@ -1,0 +1,54 @@
+pages = [
+    {
+        'filename': 'content/contact_middle.html',
+        'output': 'docs/contact.html',
+        'title': 'Contact',
+        'active_class': '{{contact_is_active}}',
+    },
+    {
+        'filename': 'content/bio_middle.html',
+        'output': 'docs/bio.html',
+        'title': 'Bio',
+        'active_class': '{{bio_is-active}}',
+    },
+    {
+        'filename': 'content/resume_middle.html',
+        'output': 'docs/resume.html',
+        'title': 'Resume',
+        'active_class': '{{resume_is_active}}',
+    },
+    {
+        'filename': 'content/middle.html',
+        'output': 'docs/index.html',
+        'title': 'Index',
+        'active_class': '{{index_is_active}}',
+    },
+]
+
+def apply_template(page, base_html, content_html):
+    '''
+    Apply templating to the given page object, using base_html as the template,
+    and content_html as the body
+    '''
+    html = base_html.replace('{{content}}', content_html)
+    html = html.replace(page['active_class'], 'active')
+    html = html.replace('{{title}}', page['title'])
+    return html
+    
+def process_page(page):
+    '''
+    Fully process a single page dictionary
+    '''
+    base_html = open('template/base.html').read()
+    content_html = open(page['filename']).read()
+    resulting_html = apply_template(page, base_html, content_html)
+    open(page['output'], 'w+').write(resulting_html)
+
+def main():
+    for page in pages:
+        print('Processing', page['title'])
+        process_page(page)
+    print('Done!')
+
+if __name__ == '__main__':
+    main()
